@@ -7,16 +7,23 @@
         {
             "name": "Amine Ben hammou",
             "email": "webneat@gmail.com"
+        } 
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "https://sapoe@bitbucket.org/sapoe/lumen-generators.git"
         }
     ],
-    "require": {
+    "require": {  
     	"php": ">=5.5.0",
         "illuminate/console": "^5.1",
         "illuminate/filesystem": "^5.1",
         "fzaninotto/faker": "^1.5",
 		"symfony/yaml": "^4.3",
 		"doctrine/dbal": "^2.9",
-        "flipbox/lumen-generator": "^5.6"
+        "flipbox/lumen-generator": "^5.6",
+        "sapoe/lumen-generators": "dev-master"
     },	
     "autoload": {
     	"psr-4": {
