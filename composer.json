@@ -12,7 +12,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url":  "https://sapoe@bitbucket.org/sapoe/lumen-generators.git"
+            "url":  "https://bitbucket.org/sapoe/lumen-generators.git"
         }
     ],
     "require": {  
