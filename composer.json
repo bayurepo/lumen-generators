@@ -23,7 +23,7 @@
 		"symfony/yaml": "^4.3",
 		"doctrine/dbal": "^2.9",
         "flipbox/lumen-generator": "^5.6",
-        "sapoe/lumen-generators": "dev-master"
+        "wn/lumen-generators": "dev-master"
     },	
     "autoload": {
     	"psr-4": {
