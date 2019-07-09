@@ -11,6 +11,7 @@ class ResourcesCommand extends BaseCommand {
         {--path=app : where to store the model files.}
         {--force= : override the existing files}
         {--laravel= : Use Laravel style route definitions}
+        {--no-routes= : without routes}
 
     ';
 
@@ -44,6 +45,9 @@ class ResourcesCommand extends BaseCommand {
             ];
             if ($this->option('laravel')) {
                 $options['--laravel'] = true;
+            }
+            if ($this->option('no-routes')) {
+                $options['--no-routes'] = true;
             }
 
             $this->call('wn:resource', $options);

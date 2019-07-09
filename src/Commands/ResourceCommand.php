@@ -18,6 +18,7 @@ class ResourceCommand extends BaseCommand {
         {--parsed : tells the command that arguments have been already parsed. To use when calling the command from an other command and passing the parsed arguments and options}
         {--force= : override the existing files}
         {--laravel= : Use Laravel style route definitions}
+        {--no-routes= : without routes}
     ';
 
     protected $description = 'Generates a model, migration, controller and routes for RESTful resource';
@@ -68,7 +69,7 @@ class ResourceCommand extends BaseCommand {
         $controllerOptions = [
             'model' => $modelName,
             '--force' => $this->option('force'),
-            '--no-routes' => false,
+            '--no-routes' => $this->option('no-routes'),
         ];
         if ($this->option('laravel')) {
             $controllerOptions['--laravel'] = true;
@@ -82,7 +83,7 @@ class ResourceCommand extends BaseCommand {
             '--force' => $this->option('force'),
             '--parsed' => true
         ]);
-
+        
         // generating database seeder
         // $this->call('wn:seeder', [
         //     'model' => 'App\\' . $modelName
