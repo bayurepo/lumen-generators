@@ -52,7 +52,7 @@ class PivotSeederCommand extends BaseCommand {
     }
 
     protected function getTableNames($resources) {
-        return array_map('str_plural', $resources);
+        return $resources;
     }
 
 }

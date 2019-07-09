@@ -26,7 +26,7 @@ class ResourcesCommand extends BaseCommand {
         $modelIndex = 0;
         foreach ($content as $model => $i){
             $i = $this->getResourceParams($model, $i);
-            $migrationName = 'Create' .  ucwords(str_plural($i['name']));
+            $migrationName = 'Create' .  ucwords($i['name']);
             $migrationFile = date('Y_m_d_His') . '-' . str_pad($modelIndex , 3, 0, STR_PAD_LEFT) . '_' . snake_case($migrationName) . '_table';
 
 

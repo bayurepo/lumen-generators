@@ -30,7 +30,7 @@ class ResourceCommand extends BaseCommand {
 
         $resourceName = $this->argument('name');
         $modelName = ucwords(camel_case($resourceName));
-        $tableName = str_plural($resourceName);
+        $tableName = $resourceName;
 
         // generating the model
         $this->call('wn:model', [

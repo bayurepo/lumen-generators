@@ -68,7 +68,7 @@ class RouteCommand extends BaseCommand {
     {
         $controller = $this->option('controller');
         if(! $controller){
-            $controller = ucwords(str_plural(camel_case($this->argument('resource')))) . 'Controller';
+            $controller = ucwords(camel_case($this->argument('resource'))) . 'Controller';
         }
         return $controller;
     }
