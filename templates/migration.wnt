@@ -9,7 +9,7 @@ class {{name}}Table extends Migration
     public function up()
     {
         Schema::create('{{table}}', function(Blueprint $table) {
-            $table->increments('{{table}}id');
+            $table->increments('{{table}}oid');
 {{schema}}
 {{constraints}}
 {{additionals}}
